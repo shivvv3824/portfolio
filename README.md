@@ -1,34 +1,24 @@
-# My Portfolio Website - Overview 🚀
+# Shiv Tandel Portfolio Website 🚀
 
-This repository contains the open-source version of my personal portfolio website.  
-Feel free to explore the code and use it for learning and inspiration.
+Personal portfolio website built with React + TypeScript + GSAP + Three.js.
 
----
-
-## ⚠️ Usage Notice
-
-This project is shared for learning purposes only.
-
-Please do NOT:
-- Clone or replicate the full website or design
-- Repost it with minor content changes
-- Use this project for commercial/client work
-- Create tutorials or content using this exact project
-
-If you use parts of the code, you must provide proper credit linking back to the original repository.
-
-Build your own version — don’t just copy.
-
-— Moncy Yohannan
+This repository is customized with Shiv Tandel's resume/projects content and visual branding.
 
 ---
 
-## 🛠️ Instructions
+## ⚠️ Template Attribution / License
 
-I have modified the GSAP Club plugins using trial versions.  
-⚠️ Note: Trial plugins cannot be used for production or hosting.
+This site is based on a portfolio template by **Moncy Yohannan**.
 
-For official GSAP Club plugins, refer here:  
+The full terms are in `LICENSE` (Personal Portfolio License, PPL v1.0).
+
+---
+
+## 🛠️ GSAP Notes
+
+Some GSAP Club plugins used by this template may require an appropriate setup/license for production hosting.
+
+For official GSAP Club plugin installation details, refer here:  
 https://gsap.com/docs/v3/Installation/
 
 ---
@@ -61,5 +51,5 @@ Any usage, extraction, or redistribution of that avatar from my live website is 
 
 This project is licensed under the Personal Portfolio License (PPL) v1.0.
 
-See the LICENSE file for full details
+See the `LICENSE` file for full details.
 
