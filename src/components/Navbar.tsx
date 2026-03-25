@@ -14,7 +14,7 @@ const Navbar = () => {
       wrapper: "#smooth-wrapper",
       content: "#smooth-content",
       smooth: 1.7,
-      speed: 1.7,
+      speed: 1,
       effects: true,
       autoResize: true,
       ignoreMobileResize: true,
@@ -43,14 +43,14 @@ const Navbar = () => {
     <>
       <div className="header">
         <a href="/#" className="navbar-title" data-cursor="disable">
-          Logo
+          Shiv Tandel
         </a>
         <a
-          href="mailto:example@mail.com"
+          href="mailto:shivvv3824@vt.edu"
           className="navbar-connect"
           data-cursor="disable"
         >
-          example@mail.com
+          shivvv3824@vt.edu
         </a>
         <ul>
           <li>

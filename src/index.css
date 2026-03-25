@@ -75,6 +75,17 @@ body {
   margin: auto;
   position: relative;
 }
+#smooth-wrapper {
+  position: relative;
+  z-index: 4;
+}
+#smooth-content {
+  position: relative;
+}
+.sections-wrapper {
+  position: relative;
+  background-color: var(--backgroundColor);
+}
 .container1 {
   width: var(--cWidth);
   height: var(--vh);
@@ -97,7 +108,8 @@ body {
   height: var(--vh);
   margin: auto;
   margin-top: 50px;
-  margin-bottom: -100px;
+  margin-bottom: 0;
+  z-index: 2;
 }
 
 .techstack h2 {
