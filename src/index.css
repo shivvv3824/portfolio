@@ -107,7 +107,7 @@ body {
   position: relative;
   height: var(--vh);
   margin: auto;
-  margin-top: 50px;
+  margin-top: 0px;
   margin-bottom: 0;
   z-index: 2;
 }

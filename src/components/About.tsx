@@ -6,15 +6,16 @@ const About = () => {
       <div className="about-me">
         <h3 className="title">About Me</h3>
         <p className="para">
-          Virginia Tech student in Cybersecurity Management and Analytics (B.S.,
-          May 2026; Dean's List). Previously, B.Tech in Computer Science and
-          Engineering (Data Science) at SVKM's Narsee Monjee Institute of
-          Management Studies (June 2025). I build secure backend systems and
-          use data-driven analysis to uncover fraud and inefficiencies. I'm
-          also a Teaching Assistant, and I enjoy turning complex concepts into
-          clear, actionable insights. Certifications: IBM Data Science
-          Professional Certificate (Dec 2025) and Google Professional Cloud Data
-          Engineer (Sep 2025).
+          I am a proactive and adaptable student currently pursuing degrees
+          in Computer Science (Data Science) and Business Information
+          Technology (Cybersecurity) at Virginia Tech. I am passionate about
+          leveraging data-driven insights and AI solutions to solve real-world
+          challenges. With a strong foundation in Python, Machine Learning, and
+          Data Analytics, coupled with experience in project management and
+          business strategy, I strive to bring a unique blend of technical
+          expertise and business acumen to my work. I am actively seeking a
+          Summer 2026 internship in Data Science, Analytics, or Cybersecurity to
+          apply these skills and gain hands-on industry experience.
         </p>
       </div>
     </div>
