@@ -6,6 +6,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -35,6 +36,14 @@ jobs:
         env:
           # Must match repository name for project pages: /<repo>/
           BASE_PATH: /portfolio/
+
+      - name: Verify bundle is not gsap-trial
+        run: |
+          if grep -rE 'gsap-trial|requires-membership|source=trial' dist/ 2>/dev/null; then
+            echo "::error::Trial GSAP strings found in dist — use standard gsap package only."
+            exit 1
+          fi
+          echo "OK: no trial GSAP markers in dist"
 
       - uses: actions/upload-pages-artifact@v3
         with:
