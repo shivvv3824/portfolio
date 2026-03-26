@@ -128,7 +128,7 @@ const Work = () => {
   ];
 
   useGSAP(() => {
-    let translateX: number = 0;
+    let translateX = 0;
 
     function setTranslateX() {
       const workSection = document.querySelector(
@@ -170,7 +170,7 @@ const Work = () => {
       timeline.kill();
       ScrollTrigger.getById("work")?.kill();
     };
-}, []);
+  }, []);
   return (
     <div className="work-section" id="work">
       <div className="work-container section-container">
