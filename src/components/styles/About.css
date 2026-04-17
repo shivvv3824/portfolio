@@ -29,6 +29,9 @@
   line-height: 32px;
   letter-spacing: 0.6px;
 }
+.about-me p + p {
+  margin-top: 1.25rem;
+}
 
 @media only screen and (min-width: 600px) {
   .about-section {

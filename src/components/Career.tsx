@@ -3,32 +3,25 @@ import "./styles/Career.css";
 const Career = () => {
   const careerItems = [
     {
-      role: "Teaching Assistant",
-      company: "Virginia Tech, Pamplin School of Business",
-      time: "2026",
-      description:
-        "Graded assignments and exams, hosted office hours, and supported two Pamplin courses (BIT & MGT). Collaborated with the professor to manage course materials on Canvas and improve the overall learning experience.",
-    },
-    {
       role: "Software Engineer Intern",
-      company: "Commenda, Bengaluru, India",
-      time: "2025",
+      company: "Commenda — Bengaluru, India",
+      time: "May 2025 – Jul 2025",
       description:
-        "Built core backend infrastructure using Go and Node.js to power an integrated product suite. Optimized PostgreSQL for performance within AWS and delivered new accounting features from concept to production in 24 hours in an Agile environment.",
+        "Engineered core backend infrastructure using Golang and Node.js to power an integrated product suite and optimized PostgreSQL databases for maximum efficiency within an AWS environment. Delivered new accounting features from concept to production within 24 hours in a fast-paced Agile environment.",
     },
     {
       role: "Business Development Intern",
-      company: "MiroTec, Mumbai, India",
-      time: "2024",
+      company: "MiroTec — Mumbai, India",
+      time: "Jun 2024 – Jul 2024",
       description:
-        "Formulated a sustainability strategy by integrating eco-friendly practices into operations, reducing operational costs by 35% in the first year. Led a client engagement reengineering effort that improved satisfaction by 40% and drove 25% repeat business.",
+        "Formulated a sustainability strategy integrating eco-friendly practices into business operations, enhancing partner relations and achieving a 35% reduction in operational costs within the first year. Led a strategic business transformation project involving reengineering client engagement processes and boosting communication channels, improving client satisfaction scores by 40% and driving a 25% increase in repeat business.",
     },
     {
       role: "Data Analyst Intern",
-      company: "Setco Inks, Gujarat, India",
-      time: "2023",
+      company: "Setco Inks — Gujarat, India",
+      time: "Jun 2023 – Aug 2023",
       description:
-        "Analyzed production and supply chain datasets (inventory, procurement costs, delivery timelines) to reduce material waste by 12%. Built dashboards and automated SQL/Excel reports for real-time insights into chemical inventory, procurement trends, and quality metrics.",
+        "Analyzed production and supply chain datasets (inventory levels, procurement costs, and delivery timelines) to uncover inefficiencies and decrease material waste by 12%, improving overall operational efficiency. Developed dashboards and automated reports using Excel and SQL, enabling real-time insights into chemical inventory, procurement trends, and quality metrics.",
     },
   ];
 

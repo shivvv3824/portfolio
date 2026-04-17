@@ -99,11 +99,12 @@ const WhatIDo = () => {
                 <div className="what-tags">Python</div>
                 <div className="what-tags">SQL</div>
                 <div className="what-tags">Golang</div>
+                <div className="what-tags">Node.js</div>
                 <div className="what-tags">AWS</div>
                 <div className="what-tags">Linux</div>
+                <div className="what-tags">Splunk</div>
                 <div className="what-tags">Wireshark</div>
                 <div className="what-tags">Cisco Packet Tracer</div>
-                <div className="what-tags">Cybersecurity</div>
               </div>
               <div className="what-arrow"></div>
             </div>
@@ -140,8 +141,10 @@ const WhatIDo = () => {
                 <div className="what-tags">Pandas</div>
                 <div className="what-tags">Scikit-learn</div>
                 <div className="what-tags">TensorFlow</div>
+                <div className="what-tags">SAS</div>
                 <div className="what-tags">Tableau</div>
                 <div className="what-tags">Power BI</div>
+                <div className="what-tags">Matplotlib</div>
                 <div className="what-tags">Plotly</div>
               </div>
               <div className="what-arrow"></div>

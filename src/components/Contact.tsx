@@ -20,6 +20,8 @@ const Contact = () => {
                 +1 (540) 824-9245
               </a>
             </p>
+            <h4>Location</h4>
+            <p>Blacksburg, VA</p>
           </div>
           <div className="contact-box">
             <h4>Social</h4>
