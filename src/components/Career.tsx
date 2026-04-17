@@ -5,30 +5,30 @@ const Career = () => {
     {
       role: "Teaching Assistant",
       company: "Virginia Tech, Pamplin School of Business",
-      time: "2026",
+      time: "Jan 2026",
       description:
-        "Graded assignments and exams, hosted office hours, and supported two Pamplin courses (BIT & MGT). Collaborated with the professor to manage course materials on Canvas and improve the overall learning experience.",
+        "Graded work, office hours, and Canvas support for BIT & MGT courses; collaborated with faculty on materials and student experience.",
     },
     {
       role: "Software Engineer Intern",
       company: "Commenda — Bengaluru, India",
-      time: "May 2025 – Jul 2025",
+      time: "May 2025",
       description:
-        "Engineered core backend infrastructure using Golang and Node.js to power an integrated product suite and optimized PostgreSQL databases for maximum efficiency within an AWS environment. Delivered new accounting features from concept to production within 24 hours in a fast-paced Agile environment.",
+        "Backend in Golang and Node.js, PostgreSQL on AWS; shipped accounting features from idea to production within 24 hours in Agile.",
     },
     {
       role: "Business Development Intern",
       company: "MiroTec — Mumbai, India",
-      time: "Jun 2024 – Jul 2024",
+      time: "Jun 2024",
       description:
-        "Formulated a sustainability strategy integrating eco-friendly practices into business operations, enhancing partner relations and achieving a 35% reduction in operational costs within the first year. Led a strategic business transformation project involving reengineering client engagement processes and boosting communication channels, improving client satisfaction scores by 40% and driving a 25% increase in repeat business.",
+        "Sustainability strategy cutting costs 35% YoY; reengineered client engagement (+40% satisfaction, +25% repeat business).",
     },
     {
       role: "Data Analyst Intern",
       company: "Setco Inks — Gujarat, India",
-      time: "Jun 2023 – Aug 2023",
+      time: "Jun 2023",
       description:
-        "Analyzed production and supply chain datasets (inventory levels, procurement costs, and delivery timelines) to uncover inefficiencies and decrease material waste by 12%, improving overall operational efficiency. Developed dashboards and automated reports using Excel and SQL, enabling real-time insights into chemical inventory, procurement trends, and quality metrics.",
+        "Supply-chain and production analytics; −12% material waste. Dashboards and SQL/Excel automation for inventory and quality.",
     },
   ];
 

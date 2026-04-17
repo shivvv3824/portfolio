@@ -170,6 +170,33 @@ const TechStack = () => {
   return (
     <div className="techstack">
       <h2> My Tech Stack</h2>
+      <div className="techstack-skills" aria-label="Technical skills from resume">
+        <div>
+          <h4>Languages &amp; web</h4>
+          <p>
+            Python · SQL · C++ · MATLAB · HTML/CSS · Golang · R
+          </p>
+        </div>
+        <div>
+          <h4>Data &amp; ML</h4>
+          <p>
+            NumPy · Pandas · Scikit-learn · TensorFlow · BeautifulSoup
+          </p>
+        </div>
+        <div>
+          <h4>Visualization &amp; BI</h4>
+          <p>
+            Power BI · SAS · Tableau · Matplotlib · Seaborn · Plotly
+          </p>
+        </div>
+        <div>
+          <h4>Platforms &amp; tools</h4>
+          <p>
+            Linux · AWS · Microsoft Office · AutoCAD · MATLAB · Figma · Wireshark · Cisco
+            Packet Tracer · Splunk
+          </p>
+        </div>
+      </div>
 
       <Canvas
         shadows

@@ -172,45 +172,46 @@ const Work = () => {
   ];
 
   useGSAP(() => {
-    let translateX = 0;
-
-    function setTranslateX() {
-      const workSection = document.querySelector(
+    const scrollDistance = () => {
+      const section = document.querySelector(
         ".work-section"
       ) as HTMLElement | null;
-      if (!workSection) return;
-
-      const boxes = Array.from(
-        document.querySelectorAll(".work-box")
-      ) as HTMLElement[];
-      if (boxes.length === 0) return;
-
-      const lastBox = boxes[boxes.length - 1];
-      translateX =
-        lastBox.offsetLeft + lastBox.offsetWidth - workSection.clientWidth;
-      translateX = Math.max(0, translateX);
-    }
-
-    setTranslateX();
+      const flex = document.querySelector(".work-flex") as HTMLElement | null;
+      if (!section || !flex) return 0;
+      // Full horizontal overflow vs viewport — fixes short scroll when last-box math is off
+      return Math.max(0, flex.scrollWidth - section.clientWidth);
+    };
 
     const timeline = gsap.timeline({
       scrollTrigger: {
         trigger: ".work-section",
+        scroller: "#smooth-wrapper",
         start: "top top",
-        end: `+=${translateX}`,
+        end: () => `+=${scrollDistance()}`,
         scrub: true,
         pin: true,
         pinSpacing: true,
         id: "work",
+        invalidateOnRefresh: true,
+        anticipatePin: 1,
       },
     });
 
     timeline.to(".work-flex", {
-      x: () => -translateX,
+      x: () => -scrollDistance(),
       ease: "none",
     });
 
+    const refresh = () => ScrollTrigger.refresh();
+    window.addEventListener("load", refresh);
+    window.addEventListener("resize", refresh);
+    const t = window.setTimeout(refresh, 400);
+    requestAnimationFrame(() => requestAnimationFrame(refresh));
+
     return () => {
+      window.removeEventListener("load", refresh);
+      window.removeEventListener("resize", refresh);
+      window.clearTimeout(t);
       timeline.kill();
       ScrollTrigger.getById("work")?.kill();
     };
