@@ -3,6 +3,13 @@ import "./styles/Career.css";
 const Career = () => {
   const careerItems = [
     {
+      role: "Teaching Assistant",
+      company: "Virginia Tech, Pamplin School of Business",
+      time: "2026",
+      description:
+        "Graded assignments and exams, hosted office hours, and supported two Pamplin courses (BIT & MGT). Collaborated with the professor to manage course materials on Canvas and improve the overall learning experience.",
+    },
+    {
       role: "Software Engineer Intern",
       company: "Commenda — Bengaluru, India",
       time: "May 2025 – Jul 2025",

@@ -92,6 +92,83 @@ const Work = () => {
         accent: "#ffd166",
       }),
     },
+    {
+      title: "Fraud Detection Analysis",
+      category: "Machine Learning • Fraud Analytics",
+      tools:
+        "Compared Logistic Regression and Decision Tree models using a Kaggle fraud dataset. Achieved 99.97% accuracy and 0.889 F1-score (Decision Tree). Engineered features, applied one-hot encoding, and performed standard scaling. Proposed improvements including ensemble methods and class-balancing techniques.",
+      image: makeProjectThumb({
+        badge: "ML",
+        title: "Fraud Detection",
+        accent: "#c2a4ff",
+      }),
+    },
+    {
+      title: "Banking Intelligent Automation System (BIAS)",
+      category: "Project Management • Cloud/AI Automation",
+      tools:
+        "Managed scope, timeline, risk, and stakeholder communications for a cloud/AI-driven banking automation initiative.",
+      image: makeProjectThumb({
+        badge: "AUTOMATE",
+        title: "Banking AI",
+        accent: "#9ad1ff",
+      }),
+    },
+    {
+      title: "Khadi Looms × Fendi",
+      category: "Strategy Consulting • International Market Entry",
+      tools:
+        "Designed a joint-venture entry into Italy; delivered PESTEL, competitive/financial analysis, and go-to-market strategy. Served as Retail & Sales lead.",
+      image: makeProjectThumb({
+        badge: "STRATEGY",
+        title: "Market Entry",
+        accent: "#ff9bd6",
+      }),
+    },
+    {
+      title: "Jio Platforms Ltd. — Organizational & Strategy Analysis",
+      category: "Business Strategy • Management Frameworks",
+      tools:
+        "Applied Mintzberg’s roles, ratio analysis, and control frameworks. Recommended leadership, HR, and operations strategies.",
+      image: makeProjectThumb({
+        badge: "ANALYZE",
+        title: "Org Strategy",
+        accent: "#58f2d1",
+      }),
+    },
+    {
+      title: "Smart Airport Network Design",
+      category: "Networking • Cisco Packet Tracer Simulation",
+      tools:
+        "Prototyped a segmented airport network with NAT, routing, and IoT integration. Validated 100% connectivity and optimized data-flow latency by 15%.",
+      image: makeProjectThumb({
+        badge: "NETWORK",
+        title: "Airport IoT",
+        accent: "#ffd166",
+      }),
+    },
+    {
+      title: "Uber vs. Lyft Cost Efficiency Model",
+      category: "Python • Stats & Business Visualization",
+      tools:
+        "Built a transportation-cost optimization model using Python. Reduced cost variance by 18% and visualized comparative costs with Plotly.",
+      image: makeProjectThumb({
+        badge: "MODEL",
+        title: "Cost Efficiency",
+        accent: "#77a7ff",
+      }),
+    },
+    {
+      title: "Fake Currency Recognition System",
+      category: "Image & Video Processing",
+      tools:
+        "Implemented an image-processing pipeline (feature extraction + classification) to authenticate Indian notes across denominations; foundational work for a research paper.",
+      image: makeProjectThumb({
+        badge: "VISION",
+        title: "Currency ID",
+        accent: "#c2a4ff",
+      }),
+    },
   ];
 
   useGSAP(() => {

@@ -198,6 +198,15 @@
   color: var(--accentColor);
   margin: 0;
 }
+.landing-headline-more {
+  font-size: 0.85em;
+  font-weight: 300;
+  opacity: 0.9;
+  letter-spacing: 1px;
+}
+.landing-role-row-secondary {
+  margin-top: 12px !important;
+}
 .landing-info h2 {
   margin: 0;
   margin-top: -20px;

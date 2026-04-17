@@ -105,6 +105,7 @@ const WhatIDo = () => {
                 <div className="what-tags">Splunk</div>
                 <div className="what-tags">Wireshark</div>
                 <div className="what-tags">Cisco Packet Tracer</div>
+                <div className="what-tags">Cybersecurity</div>
               </div>
               <div className="what-arrow"></div>
             </div>
