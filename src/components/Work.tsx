@@ -178,8 +178,17 @@ const Work = () => {
       ) as HTMLElement | null;
       const flex = document.querySelector(".work-flex") as HTMLElement | null;
       if (!section || !flex) return 0;
-      // Full horizontal overflow vs viewport — fixes short scroll when last-box math is off
       return Math.max(0, flex.scrollWidth - section.clientWidth);
+    };
+
+    /** Vertical scroll length while pinned — not 1:1 with horizontal px (avoids huge empty gap before Tech Stack). */
+    const pinScrollLength = () => {
+      const h = scrollDistance();
+      const vh = window.innerHeight || 800;
+      const minPin = vh * 1.1;
+      const maxPin = vh * 2.65;
+      if (h <= 0) return minPin;
+      return Math.round(Math.max(minPin, Math.min(h, maxPin)));
     };
 
     const timeline = gsap.timeline({
@@ -187,7 +196,7 @@ const Work = () => {
         trigger: ".work-section",
         scroller: "#smooth-wrapper",
         start: "top top",
-        end: () => `+=${scrollDistance()}`,
+        end: () => `+=${pinScrollLength()}`,
         scrub: true,
         pin: true,
         pinSpacing: true,

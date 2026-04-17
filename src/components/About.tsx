@@ -6,14 +6,16 @@ const About = () => {
       <div className="about-me">
         <h3 className="title">About Me</h3>
         <p className="para">
-          B.S. Cybersecurity Management & Analytics, Virginia Tech (May 2026) — Dean&apos;s
-          List, Pamplin Engage TA. B.Tech CSE (Data Science), NMIMS Mumbai. Blacksburg, VA.
+          I am a proactive student blending technical depth with business judgment. I focus on
+          Cybersecurity Management & Analytics at Virginia Tech (B.S., May 2026; GPA 3.80) —
+          Dean&apos;s List (Fall 2025) and Pamplin Engage Teaching Assistant — and hold a B.Tech
+          in CSE (Data Science) from NMIMS Mumbai (2025; GPA 3.35). Based in Blacksburg, VA.
         </p>
         <p className="para">
-          I build backends (Go, Node, SQL, AWS), ML/security analytics, and Splunk & BI
-          stacks. Certifications: Google Cybersecurity, IBM Gen AI for Cybersecurity, Infosec
-          Python for Cybersecurity, AWS Solutions Architect (2026). Open to Summer 2026 roles
-          in data, analytics, and security.
+          I love turning data into decisions: backend systems in Go and Node.js, PostgreSQL on
+          AWS, ML for fraud and security, and Splunk / Tableau / Power BI for operators and
+          executives. I am seeking a Summer 2026 internship in data science, analytics, or
+          cybersecurity where I can ship real features and strengthen defenses.
         </p>
       </div>
     </div>
