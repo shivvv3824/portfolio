@@ -1,10 +1,5 @@
 import "./styles/Work.css";
 import WorkImage from "./WorkImage";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useGSAP } from "@gsap/react";
-
-gsap.registerPlugin(useGSAP);
 
 const Work = () => {
   const makeProjectThumb = (opts: {
@@ -13,7 +8,7 @@ const Work = () => {
     accent: string;
   }) => {
     const { badge, title, accent } = opts;
-    const safeTitle = title.replace(/&/g, "&amp;").replace(/</g, "&lt;"); // basic escaping
+    const safeTitle = title.replace(/&/g, "&amp;").replace(/</g, "&lt;");
 
     const svg = `
       <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
@@ -33,7 +28,7 @@ const Work = () => {
         </g>
         <g>
           <text x="110" y="315" font-size="46" font-family="Arial, sans-serif" fill="#ffffff" opacity="0.95" letter-spacing="0.5">${safeTitle}</text>
-          <text x="110" y="372" font-size="22" font-family="Arial, sans-serif" fill="#ffffff" opacity="0.55">Project Thumbnail</text>
+          <text x="110" y="372" font-size="22" font-family="Arial, sans-serif" fill="#ffffff" opacity="0.55">Project</text>
         </g>
         <g opacity="0.9">
           <path d="M820 520 C860 430, 950 430, 990 520" fill="none" stroke="${accent}" stroke-width="10" stroke-linecap="round"/>
@@ -171,87 +166,36 @@ const Work = () => {
     },
   ];
 
-  useGSAP(() => {
-    const scrollDistance = () => {
-      const section = document.querySelector(
-        ".work-section"
-      ) as HTMLElement | null;
-      const flex = document.querySelector(".work-flex") as HTMLElement | null;
-      if (!section || !flex) return 0;
-      return Math.max(0, flex.scrollWidth - section.clientWidth);
-    };
-
-    /** Vertical scroll length while pinned — not 1:1 with horizontal px (avoids huge empty gap before Tech Stack). */
-    const pinScrollLength = () => {
-      const h = scrollDistance();
-      const vh = window.innerHeight || 800;
-      const minPin = vh * 1.1;
-      const maxPin = vh * 2.65;
-      if (h <= 0) return minPin;
-      return Math.round(Math.max(minPin, Math.min(h, maxPin)));
-    };
-
-    const timeline = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".work-section",
-        scroller: "#smooth-wrapper",
-        start: "top top",
-        end: () => `+=${pinScrollLength()}`,
-        scrub: true,
-        pin: true,
-        pinSpacing: true,
-        id: "work",
-        invalidateOnRefresh: true,
-        anticipatePin: 1,
-      },
-    });
-
-    timeline.to(".work-flex", {
-      x: () => -scrollDistance(),
-      ease: "none",
-    });
-
-    const refresh = () => ScrollTrigger.refresh();
-    window.addEventListener("load", refresh);
-    window.addEventListener("resize", refresh);
-    const t = window.setTimeout(refresh, 400);
-    requestAnimationFrame(() => requestAnimationFrame(refresh));
-
-    return () => {
-      window.removeEventListener("load", refresh);
-      window.removeEventListener("resize", refresh);
-      window.clearTimeout(t);
-      timeline.kill();
-      ScrollTrigger.getById("work")?.kill();
-    };
-  }, []);
   return (
-    <div className="work-section" id="work">
+    <section className="work-section" id="work">
       <div className="work-container section-container">
-        <h2>
+        <h2 className="work-heading">
           My <span>Work</span>
         </h2>
-        <div className="work-flex">
+        <div className="work-grid">
           {projects.map((project, index) => (
-            <div className="work-box" key={index}>
-              <div className="work-info">
-                <div className="work-title">
-                  <h3>0{index + 1}</h3>
-
+            <article className="work-card" key={project.title}>
+              <div className="work-card-thumb">
+                <WorkImage image={project.image} alt={project.title} />
+              </div>
+              <div className="work-card-content">
+                <div className="work-card-meta">
+                  <span className="work-card-num">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
                   <div>
-                    <h4>{project.title}</h4>
-                    <p>{project.category}</p>
+                    <h3 className="work-card-title">{project.title}</h3>
+                    <p className="work-card-category">{project.category}</p>
                   </div>
                 </div>
-                <h4>Tools and features</h4>
-                <p>{project.tools}</p>
+                <h4 className="work-card-label">Tools &amp; features</h4>
+                <p className="work-card-desc">{project.tools}</p>
               </div>
-              <WorkImage image={project.image} alt={project.title} />
-            </div>
+            </article>
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
