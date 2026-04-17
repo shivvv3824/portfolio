@@ -6,8 +6,7 @@ import HoverLinks from "./HoverLinks";
 import { publicUrl } from "../utils/publicUrl";
 
 const SocialIcons = () => {
-  /** PDF in /public/resume.pdf — replace with your résumé export for production */
-  const resumeHref = publicUrl("resume.pdf");
+  const resumeHref = publicUrl("Shiv_Tandel_Resume.pdf");
 
   useEffect(() => {
     const social = document.getElementById("social") as HTMLElement;
