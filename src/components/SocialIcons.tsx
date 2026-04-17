@@ -3,10 +3,11 @@ import "./styles/SocialIcons.css";
 import { TbNotes } from "react-icons/tb";
 import { useEffect } from "react";
 import HoverLinks from "./HoverLinks";
+import { publicUrl } from "../utils/publicUrl";
 
 const SocialIcons = () => {
-  const resumeHref =
-    "mailto:shivvv3824@vt.edu?subject=Resume%20-%20Shiv%20Tandel";
+  /** PDF in /public/resume.pdf — replace with your résumé export for production */
+  const resumeHref = publicUrl("resume.pdf");
 
   useEffect(() => {
     const social = document.getElementById("social") as HTMLElement;
@@ -76,7 +77,12 @@ const SocialIcons = () => {
           </a>
         </span>
       </div>
-      <a className="resume-button" href={resumeHref}>
+      <a
+        className="resume-button"
+        href={resumeHref}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <HoverLinks text="RESUME" />
         <span>
           <TbNotes />
